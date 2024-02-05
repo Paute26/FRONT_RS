@@ -1,0 +1,25 @@
+/* menu.component.scss */
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+}
+
+.menu-list li {
+    margin: 0;
+}
+
+.menu-list a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.menu-list a:hover {
+    background-color: #555;
+}

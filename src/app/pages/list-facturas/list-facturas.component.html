@@ -1,0 +1,14 @@
+<h1>Facturas</h1>
+
+<div *ngFor="let fact of facturas" class="factura-container">
+  <h2>Factura {{ fact.numero }}</h2>
+  <p>Cliente: {{ fact.cliente?.nombre }}</p>
+  <p>Dni: {{ fact.cliente?.dni }}</p>
+  <p>Total: ${{ fact.total }}</p>
+  <h3>Detalles:</h3>
+  <ul>
+    <li *ngFor="let detalle of fact.detalles">
+      {{ detalle.nombre }} - Cantidad: {{ detalle.cantidad }}, Precio: ${{ detalle.precio }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<!-- menu.component.html -->
+<ul class="menu-list">
+    <li> 
+        <a href="#" routerLink="paginas/acerca">Acerca</a>
+    </li>
+    <li *ngFor="let link of paginas">
+        <a href="#" [routerLink]="link.path">{{link.titulo}}</a>
+    </li>
+</ul>
